@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package Dapper.Data {
+  together {
+    class AdventureWorksRepository #aliceblue
+
+    interface IConnectionProvider #aliceblue {
+      ISqlConnection GetAdventureWorksConnection()
+    }
+  }
+
+  interface ISqlConnection #aliceblue {
+    Task<int> ExecuteAsync(...)
+    Task<IEnumerable<T>> QueryAsync<T>(...)
+    Task<T> QueryFirstAsync<T>(...)
+    Task<T?> QueryFirstOrDefaultAsync<T>(...)
+    Task<T> QuerySingleAsync<T>(...)
+    Task<T?> QuerySingleOrDefaultAsync<T>(...)
+    Task<IGridReader> QueryMultipleAsync(...)
+    ISqlTransaction BeginTransaction(...)
+  }
+
+  interface ISqlTransaction #aliceblue {
+    void Commit()
+    IDbTransaction GetTransaction()
+  }
+
+  interface IGridReader #aliceblue {
+    Task<IEnumerable<T>> ReadAsync<T>(...)
+  }
+}
+
+package Dapper.Domain {
+  interface IAdventureWorksRepository #aliceblue
+}
+
+IAdventureWorksRepository <|-- AdventureWorksRepository : implements
+AdventureWorksRepository *-- IConnectionProvider : contains
+
+@enduml

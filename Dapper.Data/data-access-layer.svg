@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="538px" preserveAspectRatio="none" style="width:808px;height:538px;background:#FFFFFF;" version="1.1" viewBox="0 0 808 538" width="808px" zoomAndPan="magnify"><defs><filter height="300%" id="fsq4qflzoliyf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fe9f0e2df9619bbff65f101b3e19c400]
+cluster Dapper.Data--><polygon fill="#FFFFFF" filter="url(#fsq4qflzoliyf)" points="16,156,108,156,115,179.6094,791,179.6094,791,531,16,531,16,156" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="115" y1="179.6094" y2="179.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="86" x="20" y="172.5332">Dapper.Data</text><!--MD5=[4f3579efc4fd81f123d4db48c91b5f36]
+cluster Dapper.Domain--><polygon fill="#FFFFFF" filter="url(#fsq4qflzoliyf)" points="518,6,631,6,638,29.6094,736,29.6094,736,106,518,106,518,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="518" x2="638" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="107" x="522" y="22.5332">Dapper.Domain</text><!--MD5=[06b6d3908e4825e9bd17086a0a9e0251]
+class ISqlConnection--><rect codeLine="12" fill="#F0F8FF" filter="url(#fsq4qflzoliyf)" height="158.6875" id="ISqlConnection" style="stroke:#A80036;stroke-width:1.5;" width="234" x="32" y="192"/><ellipse cx="102.25" cy="208" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M103.25,205 L103.25,211 L105.25,211 L105.7344,211 L106.25,211.625 L106.25,212 L106.25,212.375 L105.7344,213 L105.25,213 L99.25,213 L98.7656,213 L98.25,212.375 L98.25,212 L98.25,211.625 L98.7656,211 L99.25,211 L101.25,211 L101.25,205 L99.25,205 L98.7656,205 L98.25,204.375 L98.25,204 L98.25,203.625 L98.7656,203 L99.25,203 L105.25,203 L105.7344,203 L106.25,203.625 L106.25,204 L106.25,204.375 L105.7344,205 L105.25,205 L103.25,205 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="122.75" y="212.9102">ISqlConnection</text><line style="stroke:#A80036;stroke-width:1.5;" x1="33" x2="265" y1="224" y2="224"/><line style="stroke:#A80036;stroke-width:1.5;" x1="33" x2="265" y1="232" y2="232"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="38" y="247.4189">Task&lt;int&gt; ExecuteAsync(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="211" x="38" y="261.2549">Task&lt;IEnumerable&lt;T&gt;&gt; QueryAsync&lt;T&gt;(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="38" y="275.0908">Task&lt;T&gt; QueryFirstAsync&lt;T&gt;(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="38" y="288.9268">Task&lt;T?&gt; QueryFirstOrDefaultAsync&lt;T&gt;(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="38" y="302.7627">Task&lt;T&gt; QuerySingleAsync&lt;T&gt;(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="38" y="316.5986">Task&lt;T?&gt; QuerySingleOrDefaultAsync&lt;T&gt;(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="38" y="330.4346">Task&lt;IGridReader&gt; QueryMultipleAsync(...)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="178" x="38" y="344.2705">ISqlTransaction BeginTransaction(...)</text><!--MD5=[c4c317a02ea113747ad4145eee4d2a50]
+class ISqlTransaction--><rect codeLine="23" fill="#F0F8FF" filter="url(#fsq4qflzoliyf)" height="75.6719" id="ISqlTransaction" style="stroke:#A80036;stroke-width:1.5;" width="169" x="301.5" y="233.5"/><ellipse cx="339.45" cy="249.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M340.45,246.5 L340.45,252.5 L342.45,252.5 L342.9344,252.5 L343.45,253.125 L343.45,253.5 L343.45,253.875 L342.9344,254.5 L342.45,254.5 L336.45,254.5 L335.9656,254.5 L335.45,253.875 L335.45,253.5 L335.45,253.125 L335.9656,252.5 L336.45,252.5 L338.45,252.5 L338.45,246.5 L336.45,246.5 L335.9656,246.5 L335.45,245.875 L335.45,245.5 L335.45,245.125 L335.9656,244.5 L336.45,244.5 L342.45,244.5 L342.9344,244.5 L343.45,245.125 L343.45,245.5 L343.45,245.875 L342.9344,246.5 L342.45,246.5 L340.45,246.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="86" x="358.55" y="254.4102">ISqlTransaction</text><line style="stroke:#A80036;stroke-width:1.5;" x1="302.5" x2="469.5" y1="265.5" y2="265.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="302.5" x2="469.5" y1="273.5" y2="273.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="307.5" y="288.9189">void Commit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="307.5" y="302.7549">IDbTransaction GetTransaction()</text><!--MD5=[947fb31728366a3e780d3ae6758759c8]
+class IGridReader--><rect codeLine="28" fill="#F0F8FF" filter="url(#fsq4qflzoliyf)" height="61.8359" id="IGridReader" style="stroke:#A80036;stroke-width:1.5;" width="218" x="40" y="429"/><ellipse cx="110.75" cy="445" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M111.75,442 L111.75,448 L113.75,448 L114.2344,448 L114.75,448.625 L114.75,449 L114.75,449.375 L114.2344,450 L113.75,450 L107.75,450 L107.2656,450 L106.75,449.375 L106.75,449 L106.75,448.625 L107.2656,448 L107.75,448 L109.75,448 L109.75,442 L107.75,442 L107.2656,442 L106.75,441.375 L106.75,441 L106.75,440.625 L107.2656,440 L107.75,440 L113.75,440 L114.2344,440 L114.75,440.625 L114.75,441 L114.75,441.375 L114.2344,442 L113.75,442 L111.75,442 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="68" x="131.25" y="449.9102">IGridReader</text><line style="stroke:#A80036;stroke-width:1.5;" x1="41" x2="257" y1="461" y2="461"/><line style="stroke:#A80036;stroke-width:1.5;" x1="41" x2="257" y1="469" y2="469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="46" y="484.4189">Task&lt;IEnumerable&lt;T&gt;&gt; ReadAsync&lt;T&gt;(...)</text><!--MD5=[4fa5f4b60431c52a336c2dd2bb24902d]
+class AdventureWorksRepository--><rect codeLine="5" fill="#F0F8FF" filter="url(#fsq4qflzoliyf)" height="48" id="AdventureWorksRepository" style="stroke:#A80036;stroke-width:1.5;" width="180" x="537" y="247.5"/><ellipse cx="552" cy="263.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M554,260 Q554.2031,259.5 554.4375,259.25 Q554.6719,259 554.9375,259 Q555.4063,259 555.7031,259.2813 Q556,259.5625 556,260.2188 L556,261.7813 Q556,262.4375 555.7188,262.7188 Q555.4375,263 555,263 Q554.6094,263 554.3594,262.8281 Q554.1094,262.6563 554,262.2031 Q553.9531,261.8906 553.7813,261.7188 Q553.4688,261.3906 552.9063,261.2031 Q552.3438,261 551.7813,261 Q551.0781,261 550.4844,261.2813 Q549.9063,261.5625 549.4531,262.1875 Q549,262.8125 549,263.6719 L549,264.5938 Q549,265.625 549.8438,266.3125 Q550.6875,267 552.1875,267 Q553.0781,267 553.7031,266.7969 Q554.0625,266.6875 554.4688,266.3281 Q554.7344,266.125 554.875,266.0625 Q555.0156,266 555.1875,266 Q555.5156,266 555.75,266.2656 Q556,266.5156 556,266.875 Q556,267.2188 555.6563,267.625 Q555.1563,268.2188 554.3594,268.5469 Q553.3125,269 552.0313,269 Q550.5313,269 549.3281,268.4063 Q548.3594,267.9375 547.6719,266.9219 Q547,265.9063 547,264.7031 L547,263.6094 Q547,262.3594 547.5938,261.2656 Q548.2031,260.1719 549.25,259.5938 Q550.3125,259 551.5,259 Q552.2188,259 552.8438,259.25 Q553.4688,259.5 554,260 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="148" x="566" y="268.4102">AdventureWorksRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="538" x2="716" y1="279.5" y2="279.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="538" x2="716" y1="287.5" y2="287.5"/><!--MD5=[5214e55013701c2f87e7ebcf80a373cb]
+class IConnectionProvider--><rect codeLine="7" fill="#F0F8FF" filter="url(#fsq4qflzoliyf)" height="61.8359" id="IConnectionProvider" style="stroke:#A80036;stroke-width:1.5;" width="247" x="503.5" y="429"/><ellipse cx="566.25" cy="445" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M567.25,442 L567.25,448 L569.25,448 L569.7344,448 L570.25,448.625 L570.25,449 L570.25,449.375 L569.7344,450 L569.25,450 L563.25,450 L562.7656,450 L562.25,449.375 L562.25,449 L562.25,448.625 L562.7656,448 L563.25,448 L565.25,448 L565.25,442 L563.25,442 L562.7656,442 L562.25,441.375 L562.25,441 L562.25,440.625 L562.7656,440 L563.25,440 L569.25,440 L569.7344,440 L570.25,440.625 L570.25,441 L570.25,441.375 L569.7344,442 L569.25,442 L567.25,442 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="586.75" y="449.9102">IConnectionProvider</text><line style="stroke:#A80036;stroke-width:1.5;" x1="504.5" x2="749.5" y1="461" y2="461"/><line style="stroke:#A80036;stroke-width:1.5;" x1="504.5" x2="749.5" y1="469" y2="469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="509.5" y="484.4189">ISqlConnection GetAdventureWorksConnection()</text><!--MD5=[960ed0b7eded405ddee382ada03bace7]
+class IAdventureWorksRepository--><rect codeLine="34" fill="#F0F8FF" filter="url(#fsq4qflzoliyf)" height="48" id="IAdventureWorksRepository" style="stroke:#A80036;stroke-width:1.5;" width="186" x="534" y="42"/><ellipse cx="549" cy="58" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M550,55 L550,61 L552,61 L552.4844,61 L553,61.625 L553,62 L553,62.375 L552.4844,63 L552,63 L546,63 L545.5156,63 L545,62.375 L545,62 L545,61.625 L545.5156,61 L546,61 L548,61 L548,55 L546,55 L545.5156,55 L545,54.375 L545,54 L545,53.625 L545.5156,53 L546,53 L552,53 L552.4844,53 L553,53.625 L553,54 L553,54.375 L552.4844,55 L552,55 L550,55 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="154" x="563" y="62.9102">IAdventureWorksRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="535" x2="719" y1="74" y2="74"/><line style="stroke:#A80036;stroke-width:1.5;" x1="535" x2="719" y1="82" y2="82"/><!--MD5=[4f052f259452290825067218bd3b3450]
+reverse link IAdventureWorksRepository to AdventureWorksRepository--><path codeLine="37" d="M627,110.47 C627,152.39 627,214.23 627,247.43 " fill="none" id="IAdventureWorksRepository-backto-AdventureWorksRepository" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="620,110.34,627,90.34,634,110.34,620,110.34" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="628" y="136.4951">implements</text><!--MD5=[84d57b00b8897007f279384199f2a62a]
+reverse link AdventureWorksRepository to IConnectionProvider--><path codeLine="38" d="M627,309.15 C627,344.18 627,396.34 627,428.98 " fill="none" id="AdventureWorksRepository-backto-IConnectionProvider" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="627,295.74,623,301.74,627,307.74,631,301.74,627,295.74" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="628" y="395.4951">contains</text><!--MD5=[8953a27e72b74fe8146537bb133fb003]
+link ISqlConnection to ISqlTransaction--><!--MD5=[6beb8209ad8808ba876f253ea18721ff]
+link ISqlConnection to IGridReader--><!--MD5=[77b0d470184521a711f81fab43ec624a]
+@startuml
+'https://plantuml.com/class-diagram
+
+package Dapper.Data {
+  together {
+    class AdventureWorksRepository #aliceblue
+
+    interface IConnectionProvider #aliceblue {
+      ISqlConnection GetAdventureWorksConnection()
+    }
+  }
+
+  interface ISqlConnection #aliceblue {
+    Task<int> ExecuteAsync(...)
+    Task<IEnumerable<T>> QueryAsync<T>(...)
+    Task<T> QueryFirstAsync<T>(...)
+    Task<T?> QueryFirstOrDefaultAsync<T>(...)
+    Task<T> QuerySingleAsync<T>(...)
+    Task<T?> QuerySingleOrDefaultAsync<T>(...)
+    Task<IGridReader> QueryMultipleAsync(...)
+    ISqlTransaction BeginTransaction(...)
+  }
+
+  interface ISqlTransaction #aliceblue {
+    void Commit()
+    IDbTransaction GetTransaction()
+  }
+
+  interface IGridReader #aliceblue {
+    Task<IEnumerable<T>> ReadAsync<T>(...)
+  }
+}
+
+package Dapper.Domain {
+  interface IAdventureWorksRepository #aliceblue
+}
+
+IAdventureWorksRepository <|- - AdventureWorksRepository : implements
+AdventureWorksRepository *- - IConnectionProvider : contains
+
+@enduml
+
+@startuml
+
+package Dapper.Data {
+  together {
+    class AdventureWorksRepository #aliceblue
+
+    interface IConnectionProvider #aliceblue {
+      ISqlConnection GetAdventureWorksConnection()
+    }
+  }
+
+  interface ISqlConnection #aliceblue {
+    Task<int> ExecuteAsync(...)
+    Task<IEnumerable<T>> QueryAsync<T>(...)
+    Task<T> QueryFirstAsync<T>(...)
+    Task<T?> QueryFirstOrDefaultAsync<T>(...)
+    Task<T> QuerySingleAsync<T>(...)
+    Task<T?> QuerySingleOrDefaultAsync<T>(...)
+    Task<IGridReader> QueryMultipleAsync(...)
+    ISqlTransaction BeginTransaction(...)
+  }
+
+  interface ISqlTransaction #aliceblue {
+    void Commit()
+    IDbTransaction GetTransaction()
+  }
+
+  interface IGridReader #aliceblue {
+    Task<IEnumerable<T>> ReadAsync<T>(...)
+  }
+}
+
+package Dapper.Domain {
+  interface IAdventureWorksRepository #aliceblue
+}
+
+IAdventureWorksRepository <|- - AdventureWorksRepository : implements
+AdventureWorksRepository *- - IConnectionProvider : contains
+
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 11:25:22 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
