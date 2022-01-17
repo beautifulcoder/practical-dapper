@@ -57,7 +57,8 @@ public class AdventureWorksRepository: IAdventureWorksRepository
       .ConfigureAwait(false);
   }
 
-  public async Task<SalesOrder?> GetFirstSalesOrderOrDefault(int customerId)
+  public async Task<SalesOrder?> GetFirstSalesOrderOrDefault(
+    int customerId)
   {
     const string sql = @"
       SELECT CustomerID, SalesOrderID,
@@ -89,7 +90,8 @@ public class AdventureWorksRepository: IAdventureWorksRepository
       .ConfigureAwait(false);
   }
 
-  public async Task<SalesOrder?> GetSingleSalesOrderOrDefault(int salesOrderId)
+  public async Task<SalesOrder?> GetSingleSalesOrderOrDefault(
+    int salesOrderId)
   {
     const string sql = @"
       SELECT CustomerID, SalesOrderID,
@@ -201,7 +203,8 @@ public class AdventureWorksRepository: IAdventureWorksRepository
     await conn.ExecuteAsync(sql).ConfigureAwait(false);
   }
 
-  public async Task<List<SalesOrder>> GetSalesOrdersTvp(List<SalesOrder> salesOrders)
+  public async Task<List<SalesOrder>> GetSalesOrdersTvp(
+    List<SalesOrder> salesOrders)
   {
     const string sql = @"
       SELECT CustomerID, SalesOrderID, RowNumber
