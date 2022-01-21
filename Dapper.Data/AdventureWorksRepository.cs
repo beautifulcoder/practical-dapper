@@ -194,9 +194,10 @@ public class AdventureWorksRepository: IAdventureWorksRepository
 
     CREATE TYPE dbo.SalesOrderType AS TABLE
     (
-      CustomerID INT,
-      SalesOrderID INT,
-      RowNumber INT
+      CustomerID INT NOT NULL,
+      SalesOrderID INT NOT NULL,
+      RowNumber INT NOT NULL,
+      INDEX IX_SalesOrderId CLUSTERED (SalesOrderId)
     )";
 
     using var conn = _db.GetAdventureWorksConnection();
