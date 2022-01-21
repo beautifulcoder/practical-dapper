@@ -203,12 +203,15 @@ public class AdventureWorksRepository: IAdventureWorksRepository
     await conn.ExecuteAsync(sql).ConfigureAwait(false);
   }
 
-  public async Task<List<SalesOrder>> GetSalesOrdersTvp(
+  public async Task<int> UpdateSalesOrdersTvp(
     List<SalesOrder> salesOrders)
   {
     const string sql = @"
-      SELECT CustomerID, SalesOrderID, RowNumber
-      FROM @tvp";
+      UPDATE soh SET
+        soh.CustomerID = tvp.CustomerID
+      FROM Sales.SalesOrderHeader soh
+      INNER JOIN @tvp tvp ON soh.SalesOrderId = tvp.SalesOrderId
+      WHERE soh.SalesOrderId = 0";
 
     var param = new
     {
@@ -219,8 +222,7 @@ public class AdventureWorksRepository: IAdventureWorksRepository
 
     using var conn = _db.GetAdventureWorksConnection();
 
-    return (await conn.QueryAsync<SalesOrder>(sql, param)
-        .ConfigureAwait(false))
-      .ToList();
+    return await conn.ExecuteAsync(sql, param)
+      .ConfigureAwait(false);
   }
 }

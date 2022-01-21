@@ -35,5 +35,5 @@ Console.WriteLine("QueryStoredProcedure # of rows = " + queryStoredProcedureResu
 await repo.CreateSalesOrderTvp();
 Console.WriteLine("Created dbo.SalesOrderType TVP");
 
-var queryTvpResult = await repo.GetSalesOrdersTvp(queryResult);
-Console.WriteLine("QueryTvp # of rows = " + queryTvpResult.Count);
+var tvpResult = await repo.UpdateSalesOrdersTvp(queryResult);
+Console.WriteLine("ExecuteTvp # of rows = " + tvpResult);

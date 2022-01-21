@@ -14,5 +14,5 @@ public interface IAdventureWorksRepository
   Task<List<EmployeeManager>> GetEmployeeManagers(int businessEntityId);
   Task<int> UpdateSalesOrderTransaction(int salesOrderId, byte status);
   Task CreateSalesOrderTvp();
-  Task<List<SalesOrder>> GetSalesOrdersTvp(List<SalesOrder> salesOrders);
+  Task<int> UpdateSalesOrdersTvp(List<SalesOrder> salesOrders);
 }

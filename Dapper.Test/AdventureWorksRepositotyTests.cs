@@ -234,25 +234,25 @@ public class AdventureWorksRepositoryTests
   }
 
   [Fact]
-  public async Task GetSalesOrdersTvp()
+  public async Task UpdateSalesOrdersTvp()
   {
     // arrange
     _db
-      .Setup(m => m.QueryAsync<SalesOrder>(
+      .Setup(m => m.ExecuteAsync(
         It.Is<string>(s => s != null),
         It.Is<object>(o => o != null),
         null,
         null,
         null))
-      .ReturnsAsync(new List<SalesOrder>());
+      .ReturnsAsync(1);
 
     // act
-    var result = await _repo.GetSalesOrdersTvp(new List<SalesOrder>
+    var result = await _repo.UpdateSalesOrdersTvp(new List<SalesOrder>
     {
       new() {CustomerId = 1, RowNumber = 1, SalesOrderId = 1}
     });
 
     // assert
-    Assert.NotNull(result);
+    Assert.Equal(1, result);
   }
 }
