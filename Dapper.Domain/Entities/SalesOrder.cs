@@ -1,8 +1,9 @@
 namespace Dapper.Domain.Entities;
 
-public class SalesOrder
+public record SalesOrder(
+  int CustomerId,
+  int SalesOrderId,
+  int RowNumber)
 {
-  public int CustomerId { get; set; }
-  public int SalesOrderId { get; set; }
-  public int RowNumber { get; set; }
-}
+  public SalesOrder() : this(0, 0, 0) {}
+};

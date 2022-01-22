@@ -1,8 +1,9 @@
 namespace Dapper.Domain.Entities;
 
-public class EmployeeManager
+public record EmployeeManager(
+  int RecursionLevel,
+  int BusinessEntityId,
+  string OrganizationNode)
 {
-  public int RecursionLevel { get; set; }
-  public int BusinessEntityId { get; set; }
-  public string OrganizationNode { get; set; } = string.Empty;
-}
+  public EmployeeManager() : this(0, 0, string.Empty) {}
+};
