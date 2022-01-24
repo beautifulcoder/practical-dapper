@@ -40,7 +40,7 @@ public class AdventureWorksRepository: IAdventureWorksRepository
 
     return (await conn.QueryAsync<SalesOrder>(sql)
         .ConfigureAwait(false))
-      .ToList();
+      .AsList();
   }
 
   public async Task<SalesOrder> GetFirstSalesOrder()
@@ -134,15 +134,15 @@ public class AdventureWorksRepository: IAdventureWorksRepository
 
     result.AddRange((await query.ReadAsync<SalesOrder>()
         .ConfigureAwait(false))
-      .ToList());
+      .AsList());
 
     result.AddRange((await query.ReadAsync<SalesOrder>()
         .ConfigureAwait(false))
-      .ToList());
+      .AsList());
 
     result.AddRange((await query.ReadAsync<SalesOrder>()
         .ConfigureAwait(false))
-      .ToList());
+      .AsList());
 
     return result;
   }
@@ -160,7 +160,7 @@ public class AdventureWorksRepository: IAdventureWorksRepository
           param,
           commandType: CommandType.StoredProcedure)
         .ConfigureAwait(false))
-      .ToList();
+      .AsList();
   }
 
   public async Task<int> UpdateSalesOrderTransaction(
