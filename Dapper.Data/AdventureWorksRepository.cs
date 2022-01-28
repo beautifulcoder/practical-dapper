@@ -164,7 +164,7 @@ public class AdventureWorksRepository: IAdventureWorksRepository
   }
 
   public async Task<int> UpdateSalesOrderTransaction(
-    int salesOrderId,
+    List<int> salesOrderIds,
     byte status)
   {
     const string sql = @"
@@ -172,15 +172,19 @@ public class AdventureWorksRepository: IAdventureWorksRepository
       SET STATUS = @status
       WHERE SalesOrderID = @salesOrderId";
 
-    var param = new {status, salesOrderId};
+    var result = 0;
+
     using var conn = _db.GetAdventureWorksConnection();
+    conn.Open();
     using var trans = conn.BeginTransaction();
 
-    var result = await conn.ExecuteAsync(sql, param, trans)
-      .ConfigureAwait(false);
+    foreach (var salesOrderId in salesOrderIds)
+    {
+      var param = new {status, salesOrderId};
 
-    result += await conn.ExecuteAsync(sql, param, trans)
-      .ConfigureAwait(false);
+      result += await conn.ExecuteAsync(sql, param, trans)
+        .ConfigureAwait(false);
+    }
 
     trans.Commit();
 

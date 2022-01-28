@@ -32,6 +32,10 @@ Console.WriteLine("QueryMultiple # of rows = " + queryMultipleResult.Count);
 var queryStoredProcedureResult = await repo.GetEmployeeManagers(9);
 Console.WriteLine("QueryStoredProcedure # of rows = " + queryStoredProcedureResult.Count);
 
+var transactionResult = await repo.UpdateSalesOrderTransaction(
+  new List<int> {0, 0}, 5);
+Console.WriteLine("Transaction # of rows = " + transactionResult);
+
 await repo.CreateSalesOrderTvp();
 Console.WriteLine("Created dbo.SalesOrderType TVP");
 

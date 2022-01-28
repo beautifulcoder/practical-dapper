@@ -18,6 +18,7 @@ package Dapper.Data {
     Task<T> QuerySingleAsync<T>(...)
     Task<T?> QuerySingleOrDefaultAsync<T>(...)
     Task<IGridReader> QueryMultipleAsync(...)
+    void Open()
     ISqlTransaction BeginTransaction(...)
   }
 

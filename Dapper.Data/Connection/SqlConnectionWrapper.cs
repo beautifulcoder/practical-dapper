@@ -102,6 +102,8 @@ public class SqlConnectionWrapper: ISqlConnection
       commandTimeout,
       commandType).ConfigureAwait(false));
 
+  public void Open() => _dbConnection.Open();
+
   public ISqlTransaction BeginTransaction(
     IsolationLevel isolationLevel = IsolationLevel.Unspecified) =>
     new SqlTransactionWrapper(

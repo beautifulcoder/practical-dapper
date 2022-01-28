@@ -211,7 +211,8 @@ public class AdventureWorksRepositoryTests
       .ReturnsAsync(1);
 
     // act
-    var result = await _repo.UpdateSalesOrderTransaction(1, 5);
+    var result = await _repo.UpdateSalesOrderTransaction(
+      new List<int> {1, 1}, 5);
 
     // assert
     Assert.Equal(2, result);

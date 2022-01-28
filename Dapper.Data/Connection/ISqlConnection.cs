@@ -121,6 +121,8 @@ public interface ISqlConnection: IDisposable
     int? commandTimeout = null,
     CommandType? commandType = null);
 
+  void Open();
+
   ISqlTransaction BeginTransaction(
     IsolationLevel isolationLevel = IsolationLevel.Unspecified);
 }

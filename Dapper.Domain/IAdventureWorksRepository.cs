@@ -12,7 +12,7 @@ public interface IAdventureWorksRepository
   Task<SalesOrder?> GetSingleSalesOrderOrDefault(int salesOrderId);
   Task<List<SalesOrder>> GetSalesOrders(int customerId);
   Task<List<EmployeeManager>> GetEmployeeManagers(int businessEntityId);
-  Task<int> UpdateSalesOrderTransaction(int salesOrderId, byte status);
+  Task<int> UpdateSalesOrderTransaction(List<int> salesOrderIds, byte status);
   Task CreateSalesOrderTvp();
   Task<int> UpdateSalesOrdersTvp(List<SalesOrder> salesOrders);
 }
