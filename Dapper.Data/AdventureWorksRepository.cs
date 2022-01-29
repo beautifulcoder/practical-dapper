@@ -169,7 +169,7 @@ public class AdventureWorksRepository: IAdventureWorksRepository
   {
     const string sql = @"
       UPDATE Sales.SalesOrderHeader
-      SET STATUS = @status
+      SET Status = @status
       WHERE SalesOrderID = @salesOrderId";
 
     var result = 0;
@@ -198,9 +198,8 @@ public class AdventureWorksRepository: IAdventureWorksRepository
 
     CREATE TYPE dbo.SalesOrderType AS TABLE
     (
-      CustomerID INT NOT NULL,
+      Status TINYINT NOT NULL,
       SalesOrderID INT NOT NULL,
-      RowNumber INT NOT NULL,
       INDEX IX_SalesOrderId CLUSTERED (SalesOrderId)
     )";
 
@@ -208,15 +207,13 @@ public class AdventureWorksRepository: IAdventureWorksRepository
     await conn.ExecuteAsync(sql).ConfigureAwait(false);
   }
 
-  public async Task<int> UpdateSalesOrdersTvp(
-    List<SalesOrder> salesOrders)
+  public async Task<int> UpdateSalesOrdersTvp(List<SalesOrderType> salesOrders)
   {
     const string sql = @"
       UPDATE soh SET
-        soh.CustomerID = tvp.CustomerID
+        soh.Status = tvp.Status
       FROM Sales.SalesOrderHeader soh
-      INNER JOIN @tvp tvp ON soh.SalesOrderId = tvp.SalesOrderId
-      WHERE soh.SalesOrderId = 0";
+      INNER JOIN @tvp tvp ON soh.SalesOrderId = tvp.SalesOrderId";
 
     var param = new
     {

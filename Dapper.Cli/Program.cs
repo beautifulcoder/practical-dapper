@@ -1,5 +1,6 @@
 ﻿using Dapper.Data;
 using Dapper.Data.Connection;
+using Dapper.Domain.Entities;
 
 var conn = new ConnectionProvider();
 var repo = new AdventureWorksRepository(conn);
@@ -39,5 +40,9 @@ Console.WriteLine("Transaction # of rows = " + transactionResult);
 await repo.CreateSalesOrderTvp();
 Console.WriteLine("Created dbo.SalesOrderType TVP");
 
-var tvpResult = await repo.UpdateSalesOrdersTvp(queryResult);
+var tvpResult = await repo.UpdateSalesOrdersTvp(new List<SalesOrderType>
+{
+  new(5, 0),
+  new(5, 0)
+});
 Console.WriteLine("ExecuteTvp # of rows = " + tvpResult);

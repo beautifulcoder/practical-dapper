@@ -248,9 +248,10 @@ public class AdventureWorksRepositoryTests
       .ReturnsAsync(1);
 
     // act
-    var result = await _repo.UpdateSalesOrdersTvp(new List<SalesOrder>
+    var result = await _repo.UpdateSalesOrdersTvp(new List<SalesOrderType>
     {
-      new() {CustomerId = 1, RowNumber = 1, SalesOrderId = 1}
+      new(5, 0),
+      new (5, 0)
     });
 
     // assert
